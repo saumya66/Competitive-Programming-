@@ -7,23 +7,19 @@ void solve()
 {
 	ll n;
 	cin >> n;
-	std::vector<ll> v(n);
-	for (ll &x : v)cin >> x;
-	ll ans = 0;
-	std::vector<ll> dp(n);
-	ll mx = 0;
-	for (ll i = n - 1; i >= dd0; --i)
-	{
-		dp[i] = v[i];
-		ll j = i + v[i];
-		if (j < n)
-		{
-			dp[i] += dp[j];
-
-		}
+	std::vector<ll> v  ;
+	ll b = n % 9;
+	for (ll i = 0; i < n; i++) {
+		v.push_back(8);
 	}
-	cout << *max_element(dp.begin(), dp.end());
+	ll a = 0;
+	cout << 9;
+	for (ll i = 1; i < n; i++)
+	{
+		ll a = n - i;
+		cout << abs(9 - a);
 
+	}
 
 }
 int main()
